@@ -1,64 +1,62 @@
-class Hospital
+class values
 
 {
 
-//Instance variable
+byte Byte;
 
-String patientName;
+int integer;
 
-int patientid;
+long Long;
 
-//Static(class) variable
+short Short;
 
-static String DocName="Dr. Murthy";
+boolean Boolean;
 
-void sethospital(String pN ,int pld)
+String string;
+
+float Float;
+
+char ch;
+
+double Double;
+
+void getvalues()
 
 {
 
-patientName=pN; patientid=pld;
+System.out.println("The Default value of primitive datatype Byte: "+ Byte);
+
+System.out.println("The Default value of primitive datatype Integer: "+ integer);
+
+System.out.println("The Default value of primitive datatype long: "+ Long);
+
+System.out.println("The Default value of primitive datatype Short: "+ Short);
+
+System.out.println("The Default value of primitive datatype Boolean: "+Boolean);
+
+System.out.println("The Default value of string: "+ string); System.out.println("The
+
+Default value of primitive datatype Float: "+ Float);
+
+System.out.println("The Default value of primitive datatype char: "+ ch);
+
+System.out.println("The Default value of primitive datatype double: "+ Double);
 
 }
 
-String getpatientName()
-
-{
-
-return patientName;
-
 }
 
-int getpatientid()
+public class defaultvalues
 
 {
 
-return patientid;
-
-}
-
-}
-
-public class DemoScopeofVariables
+public static void main(String[] args)
 
 {
 
-public static void main(String args[])
+values var=new values();
 
-{
-
-//Local variable
-
-String hospitalName="Apollo Hospital";
-
-Hospital patient1=new Hospital();
-
-patient1.sethospital("Anita Joseph",101);
-
-System.out.println("The patient" +patient1.getpatientName()+" With the Id"
-
-jkqefgiiwrl;wr;hwhi;+patient1.getpatientid()+" is treated by" +patient1.DocName+"at"
-
-+hospitalName);
+var.getvalues();
 
 }
 
