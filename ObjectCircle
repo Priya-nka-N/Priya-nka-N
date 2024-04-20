@@ -1,0 +1,23 @@
+package activity2_2;
+public class Circle {
+	double radius;
+    String color;
+
+    public Circle(double radius, String color) {
+        this.radius = radius;
+        this.color = color;
+    }
+
+    public static void main(String[] args) {
+        Circle myCircle = new Circle(5, "blue");
+
+        System.out.println("Radius: " + myCircle.radius);
+        System.out.println("Color: " + myCircle.color);
+
+        myCircle.radius = 10;
+        myCircle.color = "red";
+
+        System.out.println("Modified Radius: " + myCircle.radius);
+        System.out.println("Modified Color: " + myCircle.color);
+    }
+}
